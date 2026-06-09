@@ -1,0 +1,32 @@
+@model CadastroAlunosMVC.Models.Aluno
+
+<h2>Cadastro realizado com sucesso!</h2>
+
+<hr />
+
+<p>
+    <strong>Nome:</strong> @Model.Nome
+</p>
+
+<p>
+    <strong>E-mail:</strong> @Model.Email
+</p>
+
+<p>
+    <strong>RA:</strong> @Model.RA
+</p>
+
+<p>
+    <strong>Curso:</strong> @Model.Curso
+</p>
+
+<p>
+    <strong>Data de Nascimento:</strong>
+    @Model.DataNascimento.ToString("dd/MM/yyyy")
+</p>
+
+<br />
+
+<a asp-action="Cadastrar">
+    Novo Cadastro
+</a>
